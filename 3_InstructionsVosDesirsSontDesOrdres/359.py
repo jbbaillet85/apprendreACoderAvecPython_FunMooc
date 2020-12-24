@@ -38,3 +38,22 @@ Consignes
     NB_ESSAIS_MAX = 6
     secret = random.randint(0, 100)
     et ne pas faire d’autre appel à randint ou à une autre fonction du module random."""
+    import random
+
+NB_ESSAIS_MAX = 6
+secret = random.randint(0, 100)
+essais = int(input())
+nb_essais = 1
+
+while essais != secret and nb_essais < NB_ESSAIS_MAX:
+	if essais < secret:
+		print('Trop petit')
+	else:
+		print('Trop grand')
+	essais = int(input())
+	nb_essais += 1
+
+if essais == secret:
+	print('Gagné en {} essais ! '.format(nb_essais))
+else:
+	print('Perdu ! Le secret était {} '.format(secret))

@@ -31,3 +31,26 @@ qui indique qu’il faut sommer 0 nombre,
 le résultat à imprimer vaudra donc
 0
 """
+nombre = input()
+sentinelleN = int(nombre)
+increment = 0
+sentinelleF = 'F'
+somme = 0
+
+if sentinelleN >= 0:
+    nombre = int(nombre)
+    while increment < sentinelleN:
+        nombre = int(input())
+        somme += nombre
+        increment += 1
+    print(somme)
+
+else:
+    while nombre != sentinelleF:
+        nombre = input()
+        if nombre == sentinelleF:
+            nombre = sentinelleF
+        else:
+            nombre = int(nombre)
+            somme += nombre
+    print(somme)

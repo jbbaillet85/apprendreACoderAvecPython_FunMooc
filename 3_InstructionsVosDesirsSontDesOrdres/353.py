@@ -22,10 +22,12 @@ Consignes
     Pour rappel, la réponse attendue a été calculée par le script de Sébastien dans la vidéo d'introduction de la boucle while, en section 3.4.1.
     Cette réponse n'est pas à faire calculer par votre programme, qui se contente de la demander à l'utilisateur.
 """
-reponse = 9
-choix = int(input("Combien de plis sont-ils nécessaires pour se rendre sur la Lune ? : "))
-while reponse != choix:
-    print("Mauvaise réponse.")
-    choix = int(input("Combien de plis sont-ils nécessaires pour se rendre sur la Lune ? : "))
-if choix == reponse:
-    print("Bravo !")
+reponse=int(input("Combien de plis sont-ils nécessaires pour se rendre sur la Lune ? : "))
+if reponse==42:
+        print ("Bravo !")
+
+while reponse!=42:
+    print ("Mauvaise réponse.")
+    reponse=int(input("Combien de plis sont-ils nécessaires pour se rendre sur la Lune ? : "))
+    if reponse==42:
+        print ("Bravo !")
